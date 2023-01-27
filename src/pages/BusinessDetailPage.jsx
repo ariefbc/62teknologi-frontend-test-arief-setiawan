@@ -36,7 +36,10 @@ const BusinessDetailPage = () => {
         {!businessDetails ? (
           <h1>Loading data...</h1>
         ) : (
-          <h1>{businessDetails.name}</h1>
+          <div>
+            <h1>{businessDetails.name}</h1>
+            <h3>(Rating: {businessDetails.rating})</h3>
+          </div>
         )}
       </div>
     </div>
